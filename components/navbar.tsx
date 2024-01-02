@@ -7,7 +7,16 @@ type Props = {
 }
 
 function Navbar({ className }: Props) {
-  return <header className={cn(className)}>Navbar</header>
+  return (
+    <header
+      className={cn(
+        "flex items-center justify-center text-6xl py-16",
+        className
+      )}
+    >
+      Zombie Lego Yourself
+    </header>
+  )
 }
 
 export default Navbar
